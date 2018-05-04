@@ -1,4 +1,4 @@
-/****************************************************************************************/
+ /****************************************************************************************/
 prompt("What is your name?"); // Faz um alerta com opocao de resposta do usuario
 alert("Nice to meet you, ", + userName); // Mostra um alerta na tela
 console.log("Also great to meet you, " + userName); // Mostra um alerta no console
@@ -68,13 +68,14 @@ document.querySelectorALL('CSS Element');
 /****************************************************************************************/
 // Manipulating Style
 
-//Pior jeito
+//Worst way
 var tag = document.getElementById('id');
 tag.style.color = "blue";
 tag.style.border = "10px solid red";
 
 ---------
-//Definir uma classe
+//Better way
+//Define a class
 .nomeClasse{
   color:blue;
   border: 10px solid red;
@@ -82,13 +83,31 @@ tag.style.border = "10px solid red";
 var tag = document.getElementById('id');
 //Adiciona a classe
 tag.classList.add('nomeClasse');
-//Remover a classe
+//Remove the  class
 tag.classList.remove('nomeClasse');
 //Toggle
 tag.classList.toggle('nomeClasse'); // Se o elemento já tiver a classe ele remove, caso não tenha ele adiciona.
 //InnerHTML
 document.body.innerHTML = "<h1>Hello!</h1>"; //Muda a algum elemento permitindo colocar tags html que seram reconhecidas
+//TextContent
+a.textContent = "SomeThing" //Muda o valor do texto do link
 //SetAttribute()
-link.setAttribute("href", "www.site.com");//Alterar um atributo como href ou src
+tag.setAttribute("href", "www.site.com");//Alterar um atributo como href ou src
+//AddEventListener()
+var h1 = document.querySelector("h1");
+h1.AddEventListener("click", function(){ //Adiciona um evento na tag selecionada
+  h1.style.color = "pink"
+})
+//Better way
+document.querySelector("h1").AddEventListener("click", function(){
+  h1.style.color = "pink"
+})
+//Change specific element
+var h1s = document.querySelectorALL("h1");
+for (var i = 0; i < h1s.lenght; i++) {
+  h1s[i].AddEventListener("click", function(){
+    this.style.color = "pink"; // THIS fala que somente o objeto selecionado sera ativado
+  })
+}
 
 /****************************************************************************************/
