@@ -14,4 +14,4 @@ If you see a code or method here that doesn't work anymore with the current Java
 
 ## Authors
 
-* **Eduardo Airton** - [GitHub](https://github.com/Eduardoa08) - [Linkedin](https://www.linkedin.com/in/eduardo-airton/)
+* **Eduardo Airton** - [GitHub](https://github.com/EduardoAirton) - [Linkedin](https://www.linkedin.com/in/eduardo-airton/)
