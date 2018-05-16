@@ -93,6 +93,7 @@ document.body.innerHTML = "<h1>Hello!</h1>"; //Muda a algum elemento permitindo 
 a.textContent = "SomeThing" //Muda o valor do texto do link
 //SetAttribute()
 tag.setAttribute("href", "www.site.com");//Alterar um atributo como href ou src
+
 //AddEventListener()
 var h1 = document.querySelector("h1");
 h1.AddEventListener("click", function(){ //Adiciona um evento na tag selecionada
@@ -102,12 +103,54 @@ h1.AddEventListener("click", function(){ //Adiciona um evento na tag selecionada
 document.querySelector("h1").AddEventListener("click", function(){
   h1.style.color = "pink"
 })
+
 //Change specific element
 var h1s = document.querySelectorALL("h1");
 for (var i = 0; i < h1s.lenght; i++) {
   h1s[i].AddEventListener("click", function(){
     this.style.color = "pink"; // THIS fala que somente o objeto selecionado sera ativado
+    document.body.classList.toggle("CSS CLASS NAME");//se já tiver sido ativado ele desativa e se nao ativa.
   })
 }
+
+/****************************************************************************************/
+//JQUERY
+//jQuery é uma frameWork do JavaScript que facilita a escrita, porém pode deixar o programa mais
+//lento dependendo da aplicação para a qual está utilizando.
+
+//Selecionar todas as img tags
+$("h1");
+$(Selector).css(property, value);
+$("#special").css("border", "2px solid red");
+
+//.text()
+$("h1").text() //Retorna o texto de todos os h1's
+$("h1").text("Texto") //Muda o valor do h1
+
+//.html()
+$("ul").html(<li>Novo item na lista</li>)//Muda o valor html de um ou varios elementos
+
+//.attr()
+<img src="http://i.imgur.com/zvANQeG.jpg">
+$("img").attr("src", "http://i.imgur.com") //Muda um atributo da tag
+$("img:first-of-type").attr("src", "http://i.imgur.com") //Muda apenas a primeira tag img
+
+//.val()
+$("input").val("");//Muda o valor dentro do input
+$("select").val()//Apresenta qual valor o usuario selecionou
+
+//class
+  //.addClass
+$("p").addClass("MyClass yourClass")//Adiciona classes em todos os paragrafos
+  //.removeClass
+$("p").removeClass("MyClass yourClass")//Remove classes em todos os paragrafos
+  //.toggleClass
+$("p").toggleClass("MyClass yourClass")//Adciona essas classes caso elas já estejam adicionadas apaga
+
+//.click()
+$("button").click(function(){ //Adiciona uma evento de click no objeto selecionado
+  alert("butão clicado!");
+})
+
 
 /****************************************************************************************/
