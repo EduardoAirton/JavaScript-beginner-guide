@@ -1,9 +1,10 @@
  /****************************************************************************************/
 prompt("What is your name?"); // Faz um alerta com opocao de resposta do usuario
+// prompt sempre retorna uma string
+
 alert("Nice to meet you, ", + userName); // Mostra um alerta na tela
 console.log("Also great to meet you, " + userName); // Mostra um alerta no console
 var idade = Number(prompt("Qual sua idade?")); // Converte para um numero
-// prompt sempre retorna uma string
 -> === // Igual em valor e tipo
 
 // Verifica se possui a palavra sim dentre a resposta
@@ -13,6 +14,33 @@ var idade = Number(prompt("Qual sua idade?")); // Converte para um numero
     alert("Show");
   }
 }
+
+/****************************************************************************************/
+//String methods
+var str = "Hello world";
+
+// CharArt Retorna o caractere do indice indicado
+str.charAt(3) // l
+// CharCodeAt Retorna o numero unicode(ASCII) referente ao caracter do indice informado
+str.charCodeAt(0) // 72 porque é o valor de H na tabela ASCII
+// fromCharCode Retorna um caracter referente ao codigo unicode informado
+str.fromCharCode(str.charCodeAt(0)) // H
+// toUpperCase transforma em maiúsculo
+str.toUpperCase(); // HELLO WORLD
+// toLowerCase transforma em minúsculo
+str.toLowerCase() // hello world
+// Split converte uma string em ARRAY
+var arr = str.slipt("") // ["H", "e", "l", "l", "o", "w", "o", "r", "l", "d"]
+var arr2 = str.slipt(" ") // ["Hello", "World"]
+// Replace Troca um parte espeficica de uma String
+var str2 = str.replace("Hello", "Hi") // Hi World
+// Substr Retorna uma subString da String original partido da posição(X) até o tamanho desejado(Y)
+var part = str.substr(6,5) (x, y) //World
+
+
+
+/****************************************************************************************/
+
 /****************************************************************************************/
 // ForEach
 arr.forEach(function callback(currentValue, index, array) {
