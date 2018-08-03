@@ -38,9 +38,6 @@ var str2 = str.replace("Hello", "Hi") // Hi World
 var part = str.substr(6,5) (x, y) //World
 
 
-
-/****************************************************************************************/
-
 /****************************************************************************************/
 // ForEach
 arr.forEach(function callback(currentValue, index, array) {
@@ -87,7 +84,6 @@ document.getElementById('id');
 document.getElementsByClassName('className');
 document.getElementsByTagName('tagName');
 
-/****************************************************************************************/
 // Querry Selector
 
 document.querySelector('CSS Element');
@@ -101,7 +97,6 @@ var tag = document.getElementById('id');
 tag.style.color = "blue";
 tag.style.border = "10px solid red";
 
----------
 //Better way
 //Define a class
 .nomeClasse{
@@ -143,8 +138,8 @@ for (var i = 0; i < h1s.lenght; i++) {
 
 /****************************************************************************************/
 //JQUERY
-//jQuery é uma frameWork do JavaScript que facilita a escrita, porém pode deixar o programa mais
-//lento dependendo da aplicação para a qual está utilizando.
+/** jQuery é uma frameWork do JavaScript que facilita a escrita, porém pode deixar o programa mais
+    lento dependendo da aplicação para a qual está utilizando. **/
 
 //Selecionar todas as img tags
 $("h1");
