@@ -21,19 +21,26 @@ var str = "Hello world";
 
 // CharArt Retorna o caractere do indice indicado
 str.charAt(3) // l
+
 // CharCodeAt Retorna o numero unicode(ASCII) referente ao caracter do indice informado
 str.charCodeAt(0) // 72 porque é o valor de H na tabela ASCII
+
 // fromCharCode Retorna um caracter referente ao codigo unicode informado
 str.fromCharCode(str.charCodeAt(0)) // H
+
 // toUpperCase transforma em maiúsculo
 str.toUpperCase(); // HELLO WORLD
+
 // toLowerCase transforma em minúsculo
 str.toLowerCase() // hello world
+
 // Split converte uma string em ARRAY
 var arr = str.slipt("") // ["H", "e", "l", "l", "o", "w", "o", "r", "l", "d"]
 var arr2 = str.slipt(" ") // ["Hello", "World"]
+
 // Replace Troca um parte espeficica de uma String
 var str2 = str.replace("Hello", "Hi") // Hi World
+
 // Substr Retorna uma subString da String original partido da posição(X) até o tamanho desejado(Y)
 var part = str.substr(6,5) (x, y) //World
 
@@ -106,14 +113,19 @@ tag.style.border = "10px solid red";
 var tag = document.getElementById('id');
 //Adiciona a classe
 tag.classList.add('nomeClasse');
+
 //Remove the  class
 tag.classList.remove('nomeClasse');
+
 //Toggle
 tag.classList.toggle('nomeClasse'); // Se o elemento já tiver a classe ele remove, caso não tenha ele adiciona.
+
 //InnerHTML
 document.body.innerHTML = "<h1>Hello!</h1>"; //Muda a algum elemento permitindo colocar tags html que seram reconhecidas
+
 //TextContent
 a.textContent = "SomeThing" //Muda o valor do texto do link
+
 //SetAttribute()
 tag.setAttribute("href", "www.site.com");//Alterar um atributo como href ou src
 
@@ -165,8 +177,10 @@ $("select").val()//Apresenta qual valor o usuario selecionou
 //class
   //.addClass
 $("p").addClass("MyClass yourClass")//Adiciona classes em todos os paragrafos
+
   //.removeClass
 $("p").removeClass("MyClass yourClass")//Remove classes em todos os paragrafos
+
   //.toggleClass
 $("p").toggleClass("MyClass yourClass")//Adciona essas classes caso elas já estejam adicionadas apaga
 
