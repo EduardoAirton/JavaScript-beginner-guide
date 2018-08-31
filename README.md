@@ -1,6 +1,6 @@
 # JavaScript-beginner-guide
 
-A List of JavaScript and jQuery Commands to help you when you're doing that new project and dont rememeber how to do, or use a basic function
+A List of JavaScript and jQuery Commands to help you when you're doing that new project and dont rememeber how to do or use a basic function
 
 ## Getting Started
 
