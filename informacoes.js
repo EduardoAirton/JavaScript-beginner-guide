@@ -1,11 +1,11 @@
- /****************************************************************************************/
+/****************************************************************************************/
 prompt("What is your name?"); // Faz um alerta com opocao de resposta do usuario
 // prompt sempre retorna uma string
 
 alert("Nice to meet you, ", + userName); // Mostra um alerta na tela
 console.log("Also great to meet you, " + userName); // Mostra um alerta no console
 var idade = Number(prompt("Qual sua idade?")); // Converte para um numero
--> === // Igual em valor e tipo
+=== // Igual em valor e tipo
 
 // Verifica se possui a palavra sim dentre a resposta
 {
@@ -14,6 +14,10 @@ var idade = Number(prompt("Qual sua idade?")); // Converte para um numero
     alert("Show");
   }
 }
+
+//TypeOf retorna o tipo do dado informado
+let newVariable = 'Playing around with typeof.';
+console.log(typeof newVariable) //String
 
 /****************************************************************************************/
 //String methods
@@ -44,6 +48,25 @@ var str2 = str.replace("Hello", "Hi") // Hi World
 // Substr Retorna uma subString da String original partido da posição(X) até o tamanho desejado(Y)
 var part = str.substr(6,5) (x, y) //World
 
+/****************************************************************************************/
+//Libraries
+
+//Gera um número randomico 
+Math.random()
+	
+//Gera um número randomico de 0 até 100
+Math.random() * 100
+	
+//Arredonda o numero para o maior número inteiro
+Math.floor()
+
+//Retorna o menor número inteiro
+Math.ceil()
+
+//Retorna se a entrada dada é um inteiro
+Number.isInteger()
+	
+//
 
 /****************************************************************************************/
 // ForEach
