@@ -1,6 +1,6 @@
 # JavaScript-beginner-guide
 
-A List of JavaScript and jQuery Commands to help you when you're doing that new project and dont rememeber how to do use a basic function
+A List of JavaScript and jQuery Commands to help you when you're doing that new project and dont rememeber how to do, or use a basic function
 
 ## Getting Started
 
@@ -18,5 +18,3 @@ If you see a code or method here that doesn't work anymore with the current Java
 ## Authors
 
 * **Eduardo Airton** - [GitHub](https://github.com/EduardoAirton) - [Linkedin](https://www.linkedin.com/in/eduardo-airton/)
-
-
