@@ -65,8 +65,6 @@ Math.ceil()
 
 //Retorna se a entrada dada é um inteiro
 Number.isInteger()
-	
-//
 
 /****************************************************************************************/
 // ForEach
@@ -81,8 +79,7 @@ currentValue
 index *Optional*
   The index of the current element being processed in the array.
 array *Optional*
-  The array that forEach() is being applied to.
-
+  The array that forEach() is being applied to. 
 /****************************************************************************************/
 
 // METODOS ARRAY
@@ -104,8 +101,6 @@ var novo = colors.slice(0,2); // Copia os itens do index (Aonde começa e aonde 
 
 // SPLICE
 colors.splice(index,1)//Apaga a parti do index a quantidade informada
-
-
 
 /****************************************************************************************/
 // Documents
@@ -170,6 +165,35 @@ for (var i = 0; i < h1s.lenght; i++) {
     document.body.classList.toggle("CSS CLASS NAME");//se já tiver sido ativado ele desativa e se nao ativa.
   })
 }
+
+//Arguments Object
+//Possibilita chamar uma função com mais ou menos argumentos
+function multiplica(x,y,z) {  
+     if(arguments.length ===2) {
+          return x*y;     
+     }
+     return x*y*z;  
+}
+
+console.log(multiplica(2,4));  //8 
+console.log(multiplica(2,4,8));  //64
+
+function multiplica() {  
+     var length = arguments.length;
+     var total =1;
+    if(length>0) {
+          for(var i = 0; i<length; i+=1){
+             total = total * arguments[i];
+         }
+          return total;
+     }
+    return 0;
+}
+
+console.log(multiplica()); //0  
+console.log(multiplica(2)); //2  
+console.log(multiplica(2,4));  //8  
+console.log(multiplica(2,4,8)); //64
 
 /****************************************************************************************/
 //JQUERY
