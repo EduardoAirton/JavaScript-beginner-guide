@@ -51,12 +51,12 @@ var part = str.substr(6,5) (x, y) //World
 /****************************************************************************************/
 //Libraries
 
-//Gera um número randomico 
+//Gera um número randomico
 Math.random()
-	
+
 //Gera um número randomico de 0 até 100
 Math.random() * 100
-	
+
 //Arredonda o numero para o maior número inteiro
 Math.floor()
 
@@ -79,7 +79,11 @@ currentValue
 index *Optional*
   The index of the current element being processed in the array.
 array *Optional*
-  The array that forEach() is being applied to. 
+  The array that forEach() is being applied to.
+/****************************************************************************************/
+//Arrow function
+
+
 /****************************************************************************************/
 
 // METODOS ARRAY
@@ -168,17 +172,17 @@ for (var i = 0; i < h1s.lenght; i++) {
 
 //Arguments Object
 //Possibilita chamar uma função com mais ou menos argumentos
-function multiplica(x,y,z) {  
+function multiplica(x,y,z) {
      if(arguments.length ===2) {
-          return x*y;     
+          return x*y;
      }
-     return x*y*z;  
+     return x*y*z;
 }
 
-console.log(multiplica(2,4));  //8 
+console.log(multiplica(2,4));  //8
 console.log(multiplica(2,4,8));  //64
 
-function multiplica() {  
+function multiplica() {
      var length = arguments.length;
      var total =1;
     if(length>0) {
@@ -190,9 +194,9 @@ function multiplica() {
     return 0;
 }
 
-console.log(multiplica()); //0  
-console.log(multiplica(2)); //2  
-console.log(multiplica(2,4));  //8  
+console.log(multiplica()); //0
+console.log(multiplica(2)); //2
+console.log(multiplica(2,4));  //8
 console.log(multiplica(2,4,8)); //64
 
 /****************************************************************************************/
